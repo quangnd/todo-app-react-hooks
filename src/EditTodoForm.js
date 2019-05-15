@@ -1,5 +1,5 @@
 import React from "react";
-import { TextField, Paper } from "@material-ui/core";
+import { TextField } from "@material-ui/core";
 import useInputState from "./hooks/useInputState";
 
 function EditTodoForm({ editTodo, id, task, toggleEditForm }) {
