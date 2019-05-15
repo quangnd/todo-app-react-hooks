@@ -9,7 +9,7 @@ function TodoList({ todos, removeTodo, toggleTodo, editTodo }) {
   return (
     <Paper>
       <List>
-        {todos.map(todo => (
+        {todos.map((todo, i) => (
           <React.Fragment>
             <Todo
               id={todo.id}
@@ -20,7 +20,8 @@ function TodoList({ todos, removeTodo, toggleTodo, editTodo }) {
               toggleTodo={toggleTodo}
               editTodo={editTodo}
             />
-            <Divider />
+            {/*Remove the last divider */}
+            {i < todos.length - 1 && <Divider /> } 
           </React.Fragment>
         ))}
       </List>
