@@ -12,12 +12,14 @@ See in action [Todo app with Hooks](https://keen-lewin-19c820.netlify.com)
 
 ## Component Tree
 
-- App
-   | TodoApp
-      | TodoForm
-      | TodoList
-         | Todo
-            | EditTodoForm
+```
+└── App
+    ├── TodoApp
+        └── TodoForm
+        └── TodoList
+            ├── Todo
+                ├── EditTodoForm
+```
 
 ## Up & Running
 
